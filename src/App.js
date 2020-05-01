@@ -1,7 +1,10 @@
 import React from "react";
+import Roguelike from "./Roguelike";
 
-function App() {
-  return <div className="App"></div>;
-}
+const App = () => (
+  <div className="App">
+    <Roguelike width={40} height={40} tileSize={16} />
+  </div>
+);
 
 export default App;
