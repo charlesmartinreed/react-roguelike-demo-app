@@ -1,7 +1,12 @@
 import React, { useRef, useEffect } from "react";
+import InputMapper from "./InputMapper";
 
 const Roguelike = ({ width, height, tileSize }) => {
   const canvasRef = useRef(null);
+
+  //   create instance of InputManager classes
+  let inputMapper = new InputMapper();
+
   useEffect(() => {
     //   lifecycle hook that gets called AFTER the canvas is drawn to DOM.
     console.log("Draw to canvas");
